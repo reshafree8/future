@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Career Predictor</title>
+</head>
+<body>
+    <h2>Enter Details for Prediction</h2>
+    <form method="POST" action="/predict">
+        CGPA: <input type="text" name="cgpa"><br><br>
+        Preferred Work Environment (0/1/2...): <input type="text" name="env"><br><br>
+        Previous Work Experience (0 = No, 1 = Yes): <input type="text" name="exp"><br><br>
+        Highest Education (0/1/2...): <input type="text" name="edu"><br><br>
+        Risk Taking (0 = Low, 1 = Medium, 2 = High): <input type="text" name="risk"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
